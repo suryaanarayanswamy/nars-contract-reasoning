@@ -1,0 +1,142 @@
+[
+  {
+    "id": "eval_0",
+    "hypothesis": "Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "correct_label": "NotMentioned",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nQUERY: REL: Permitted(ReceivingParty, ReverseEngineer)"
+  },
+  {
+    "id": "eval_1",
+    "hypothesis": "Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, ReturnConfidentialInfo)\nEVIDENCE: \"shall immediately return and redeliver to the other all tangible material embodying the JEA Confidential Information\"\nREL: Permitted(ReceivingParty, ReturnConfidentialInfo) -> Permitted(ReceivingParty, DestroyConfidentialInfo)\nEVIDENCE: \"destroy or return some Confidential Information upon the termination of Agreement\"\nQUERY: REL: Permitted(ReceivingParty, DestroyConfidentialInfo)"
+  },
+  {
+    "id": "eval_2",
+    "hypothesis": "Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ReceivingParty, RightToConfidentialInfo)\nEVIDENCE: \"No other right or license, whether expressed or implied, in the Confidential Information is granted to the Parties hereunder.\"\nQUERY: REL: Permitted(ReceivingParty, RightToConfidentialInfo)"
+  },
+  {
+    "id": "eval_3",
+    "hypothesis": "Receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "correct_label": "NotMentioned",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nQUERY: REL: Permitted(ReceivingParty, DiscloseAgreementFact)"
+  },
+  {
+    "id": "eval_4",
+    "hypothesis": "Confidential Information shall only include technical information.",
+    "correct_label": "Contradiction",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ConfidentialInfo, TechnicalInfo)\nEVIDENCE: \"Confidential Information means any data or information that is proprietary to the Parties and not generally known to the public\"\nQUERY: REL: Permitted(ConfidentialInfo, TechnicalInfo)"
+  },
+  {
+    "id": "eval_5",
+    "hypothesis": "All Confidential Information shall be expressly identified by the Disclosing Party.",
+    "correct_label": "Contradiction",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Identified(DisclosingParty, ConfidentialInfo)\nEVIDENCE: \"Confidential Information means any data or information that is proprietary to the Parties and not generally known to the public\"\nQUERY: REL: Permitted(DisclosingParty, ConfidentialInfo)"
+  },
+  {
+    "id": "eval_6",
+    "hypothesis": "Some obligations of Agreement may survive termination of Agreement.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Survives(Termination, Obligations)\nEVIDENCE: \"the parties' duty to hold in confidence Confidential Information that was disclosed during term shall remain in effect indefinitely\"\nQUERY: REL: Permitted(Termination, Obligations)"
+  },
+  {
+    "id": "eval_8",
+    "hypothesis": "Receiving Party may retain some Confidential Information even after the return or destruction of Confidential Information.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, RetainConfidentialInfo)\nEVIDENCE: \"the returning Party may retain one copy of the Confidential Information as needed to comply with applicable law and/or returning Party's record retention policies\"\nQUERY: REL: Permitted(ReceivingParty, RetainConfidentialInfo)"
+  },
+  {
+    "id": "eval_9",
+    "hypothesis": "Confidential Information may include verbally conveyed information.",
+    "correct_label": "NotMentioned",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nQUERY: REL: Permitted(ConfidentialInfo, VerballyConveyedInfo)"
+  },
+  {
+    "id": "eval_10",
+    "hypothesis": "Receiving Party shall not solicit some of Disclosing Party's representatives.",
+    "correct_label": "NotMentioned",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nQUERY: REL: Permitted(ReceivingParty, SolicitRepresentatives)"
+  },
+  {
+    "id": "eval_12",
+    "hypothesis": "Receiving Party may create a copy of some Confidential Information in some circumstances.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, CreateCopy)\nEVIDENCE: \"the returning Party may retain one copy of the Confidential Information as needed to comply with applicable law and/or returning Party's record retention policies\"\nQUERY: REL: Permitted(ReceivingParty, CreateCopy)"
+  },
+  {
+    "id": "eval_13",
+    "hypothesis": "Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, NotifyDisclosingParty)\nEVIDENCE: \"the Recipient promptly notifies, to the extent practicable\"\nREL: Permitted(ReceivingParty, NotifyDisclosingParty) -> Permitted(ReceivingParty, DiscloseConfidentialInfo)\nEVIDENCE: \"The Recipient may disclose Confidential Information pursuant to any governmental, judicial, or administrative order\"\nQUERY: REL: Permitted(ReceivingParty, DiscloseConfidentialInfo)"
+  },
+  {
+    "id": "eval_14",
+    "hypothesis": "Receiving Party may acquire information similar to Confidential Information from a third party.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Acquired(ReceivingParty, ConfidentialInfo)\nEVIDENCE: \"was received by the Recipient without breach of this Agreement from a third party without restriction as to the use and disclosure of the Discloser's Confidential Information\"\nREL: Acquired(ReceivingParty, ConfidentialInfo) -> Permitted(ReceivingParty, ConfidentialInfo)\nEVIDENCE: \"The obligations and restrictions imposed by this Agreement will not apply to any information that\"\nQUERY: REL: Permitted(ReceivingParty, ConfidentialInfo)"
+  },
+  {
+    "id": "eval_15",
+    "hypothesis": "Receiving Party may share some Confidential Information with some of Receiving Party's employees.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, ConfidentialInfo)\nEVIDENCE: \"the Receiving Party's employees having a need for disclosure in connection with the Receiving Party's authorized use of the Confidential Information\"\nQUERY: REL: Permitted(ReceivingParty, ConfidentialInfo)"
+  },
+  {
+    "id": "eval_16",
+    "hypothesis": "Receiving Party shall not use any Confidential Information for any purpose other than the purposes stated in Agreement.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ReceivingParty, OtherPurposeUse)\nEVIDENCE: \"Receiving Party agrees not to use the Confidential Information in any way, or to manufacture or test any product embodying Confidential Information, except for the purpose set forth above.\"\nQUERY: REL: Permitted(ReceivingParty, OtherPurposeUse)"
+  },
+  {
+    "id": "eval_17",
+    "hypothesis": "Receiving Party shall not reverse engineer any objects which embody Disclosing Party's Confidential Information.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ReceivingParty, ReverseEngineer)\nEVIDENCE: \"Recipient shall not without Disclosing Party\u2019s prior written consent reverse engineer\"\nQUERY: REL: Permitted(ReceivingParty, ReverseEngineer)"
+  },
+  {
+    "id": "eval_18",
+    "hypothesis": "Receiving Party shall destroy or return some Confidential Information upon the termination of Agreement.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: POSITIVE\nREL: Permitted(ReceivingParty, ReturnOrDestroyConfidentialInfo)\nEVIDENCE: \"Recipient shall, within thirty (30) days of such request or termination, return to the Disclosing Party (or its designees) or certify as destroyed all Confidential Information\"\nQUERY: REL: Permitted(ReceivingParty, ReturnOrDestroyConfidentialInfo)"
+  },
+  {
+    "id": "eval_19",
+    "hypothesis": "Agreement shall not grant Receiving Party any right to Confidential Information.",
+    "correct_label": "Entailment",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ReceivingParty, RightToConfidentialInfo)\nEVIDENCE: \"is construed as granting either expressly or by implication, estoppel or otherwise, any license or right to the Confidential Information\"\nQUERY: REL: Permitted(ReceivingParty, RightToConfidentialInfo)"
+  },
+  {
+    "id": "eval_20",
+    "hypothesis": "Receiving Party shall not disclose the fact that Agreement was agreed or negotiated.",
+    "correct_label": "NotMentioned",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nQUERY: REL: Permitted(ReceivingParty, DiscloseAgreementFact)"
+  },
+  {
+    "id": "eval_21",
+    "hypothesis": "Confidential Information shall only include technical information.",
+    "correct_label": "Contradiction",
+    "gold_fol": null,
+    "predicted_fol": "POLARITY: NEGATIVE\nREL: NOT Permitted(ConfidentialInfo, TechnicalInformation)\nEVIDENCE: \"Confidential Information includes, but is not limited to documents, drawings, models, apparatus, sketches, designs, schedules, product plans, marketing plans, technical procedures, manufacturing processes, software, prototypes, samples, methodologies, formulations, trade secrets, patent applications, know-how, experimental results, specifications and other business information.\"\nQUERY: REL: Permitted(ConfidentialInfo, TechnicalInformation)"
+  }
+]

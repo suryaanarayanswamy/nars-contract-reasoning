@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.env
+.venv/
+venv/
+OpenNARS-for-Applications/
+raw/
+test.json
+train.json
+dev.json
+LICENSE
+TERMS
