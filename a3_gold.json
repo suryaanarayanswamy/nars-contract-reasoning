@@ -1,0 +1,1916 @@
+{
+ "ret_3": {
+  "statements": [
+   {
+    "quote": "The Parties acknowledge that each owns certain CONFIDENTIAL INFORMATION, as defined herein",
+    "force": "fact",
+    "force_text": "acknowledge",
+    "agent": {
+     "role": "BothParties",
+     "name": "The Parties"
+    },
+    "acts": [
+     {
+      "verb": "own",
+      "verb_text": "owns",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "certain CONFIDENTIAL INFORMATION",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "definition",
+      "text": "as defined herein"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "which might relate to the inventions, conceptions, ideas, know-how, discoveries, processes, machines, manufactures, compositions of matter, formulations, processes, biological material, biological methods, or any improvements thereof, whether or not patentable or suitable for other form of exclusive right or legal protection, conceived, made or derived during the course of Work within the Project under this JRA",
+    "force": "includes",
+    "force_text": "might relate to",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "CONFIDENTIAL INFORMATION"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "inventions",
+      "term": "Inventions",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "conceptions",
+      "term": "Conceptions",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "ideas",
+      "term": "Ideas",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "know-how",
+      "term": "KnowHow",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "discoveries",
+      "term": "Discoveries",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "processes",
+      "term": "Processes",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "machines",
+      "term": "Machines",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "manufactures",
+      "term": "Manufactures",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "compositions of matter",
+      "term": "CompositionsOfMatter",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "formulations",
+      "term": "Formulations",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "biological material",
+      "term": "BiologicalMaterial",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "biological methods",
+      "term": "BiologicalMethods",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "any improvements thereof",
+      "term": "Improvements",
+      "classes": [
+       "technical"
+      ]
+     }
+    ],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "whether or not patentable or suitable for other form of exclusive right or legal protection"
+     },
+     {
+      "slot": "origin",
+      "text": "conceived, made or derived during the course of Work within the Project under this JRA"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "\"CONFIDENTIAL INFORMATION\" as used in this Agreement means all technical or business information disclosed by one of the Parties to another pursuant to the JRA that is identified at the time of disclosure or within thirty (30) days thereafter as being confidential and proprietary",
+    "force": "includes",
+    "force_text": "means",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "CONFIDENTIAL INFORMATION"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "technical",
+      "term": "Technical",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "business information",
+      "term": "Business",
+      "classes": [
+       "non_technical"
+      ]
+     }
+    ],
+    "conditions": [
+     {
+      "atom": "IdentifiedConfidential",
+      "text": "that is identified at the time of disclosure or within thirty (30) days thereafter as being confidential and proprietary",
+      "frame": {
+       "verb": "identify",
+       "object": "information"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": true,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "as used in this Agreement"
+     },
+     {
+      "slot": "disclosure",
+      "text": "disclosed by one of the Parties to another pursuant to the JRA"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_8": {
+  "statements": [
+   {
+    "quote": "Receiver may disclose Confidential Information if the same: (d) becomes known to Receiver on a non-confidential basis from a source other than VIDAR without breach of this Agreement by Receiver",
+    "force": "permission",
+    "force_text": "may",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Receiver"
+    },
+    "acts": [
+     {
+      "verb": "disclose",
+      "verb_text": "disclose",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "Confidential Information",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "KnownFromOtherSource",
+      "text": "if the same: (d) becomes known to Receiver on a non-confidential basis from a source other than VIDAR without breach of this Agreement by Receiver",
+      "frame": {
+       "verb": "become_known",
+       "object": "Confidential Information"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   },
+   {
+    "quote": "becomes known to Receiver on a non-confidential basis from a source other than VIDAR without breach of this Agreement by Receiver",
+    "force": "permission",
+    "force_text": "may",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Receiver"
+    },
+    "acts": [
+     {
+      "verb": "acquire",
+      "verb_text": "becomes known",
+      "maps_to": "AcquireFromThirdParty",
+      "relation": "same",
+      "object": {
+       "text": "Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "source": {
+        "text": "from a source other than VIDAR",
+        "term": "OtherSource"
+       },
+       "manner": {
+        "text": "on a non-confidential basis",
+        "term": "NonConfidential"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "lawfulness",
+      "text": "without breach of this Agreement by Receiver"
+     }
+    ],
+    "inferred": true
+   }
+  ]
+ },
+ "ret_10": {
+  "statements": [
+   {
+    "quote": "Receiving Party shall hold and maintain the Sensitive Information in strictest confidence for the sole and exclusive benefit of the Disclosing Party",
+    "force": "obligation",
+    "force_text": "shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Receiving Party"
+    },
+    "acts": [
+     {
+      "verb": "hold",
+      "verb_text": "hold",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "the Sensitive Information",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "in strictest confidence",
+        "term": "StrictestConfidence"
+       },
+       "purpose": {
+        "text": "for the sole and exclusive benefit of the Disclosing Party",
+        "term": "BenefitOfDiscloser"
+       }
+      }
+     },
+     {
+      "verb": "maintain",
+      "verb_text": "maintain",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "the Sensitive Information",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "in strictest confidence",
+        "term": "StrictestConfidence"
+       },
+       "purpose": {
+        "text": "for the sole and exclusive benefit of the Disclosing Party",
+        "term": "BenefitOfDiscloser"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_15": {
+  "statements": [
+   {
+    "quote": "ListFusion will not use any 3rd party agents, vendors, or other providers to process the List without the written authorization by Raphael",
+    "force": "prohibition",
+    "force_text": "will not",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "ListFusion"
+    },
+    "acts": [
+     {
+      "verb": "allow_processing",
+      "verb_text": "use",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "the List",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "any 3rd party agents, vendors, or other providers",
+        "term": "ThirdPartyProviders"
+       },
+       "purpose": {
+        "text": "to process the List",
+        "term": "ProcessList"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "RaphaelWrittenAuthorization",
+      "text": "without the written authorization by Raphael",
+      "frame": {
+       "agent": "Raphael",
+       "verb": "authorize"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": true
+   },
+   {
+    "quote": "ListFusion will not create, generate, distribute, or convey to any 3rd party a username or password without prior written authorization by Raphael",
+    "force": "prohibition",
+    "force_text": "will not",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "ListFusion"
+    },
+    "acts": [
+     {
+      "verb": "create",
+      "verb_text": "create",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "a username or password",
+       "is_ci": false
+      },
+      "slots": {}
+     },
+     {
+      "verb": "generate",
+      "verb_text": "generate",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "a username or password",
+       "is_ci": false
+      },
+      "slots": {}
+     },
+     {
+      "verb": "distribute",
+      "verb_text": "distribute",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "a username or password",
+       "is_ci": false
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any 3rd party",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "convey",
+      "verb_text": "convey",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "a username or password",
+       "is_ci": false
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any 3rd party",
+        "term": "ThirdParty"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "RaphaelPriorWrittenAuthorization",
+      "text": "without prior written authorization by Raphael",
+      "frame": {
+       "agent": "Raphael",
+       "verb": "authorize"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_19": {
+  "statements": [
+   {
+    "quote": "The List will not be reproduced, transferred, or conveyed to any 3rd party without prior written authorization by Raphael",
+    "force": "prohibition",
+    "force_text": "will not be",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": ""
+    },
+    "acts": [
+     {
+      "verb": "reproduce",
+      "verb_text": "reproduced",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "The List",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "transfer",
+      "verb_text": "transferred",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "The List",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any 3rd party",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "convey",
+      "verb_text": "conveyed",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "The List",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any 3rd party",
+        "term": "ThirdParty"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "RaphaelPriorWrittenAuthorization",
+      "text": "without prior written authorization by Raphael",
+      "frame": {
+       "agent": "Raphael",
+       "verb": "authorize"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   },
+   {
+    "quote": "Additionally, ListFusion. agrees not to copy, reprint or disseminate the publications, or any information concerning the publication including the articles, graphics or contents without express written authorization from Raphael",
+    "force": "prohibition",
+    "force_text": "agrees not to",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "ListFusion"
+    },
+    "acts": [
+     {
+      "verb": "copy",
+      "verb_text": "copy",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "the publications, or any information concerning the publication including the articles, graphics or contents",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "reprint",
+      "verb_text": "reprint",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "the publications, or any information concerning the publication including the articles, graphics or contents",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "disseminate",
+      "verb_text": "disseminate",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "the publications, or any information concerning the publication including the articles, graphics or contents",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "RaphaelExpressWrittenAuthorization",
+      "text": "without express written authorization from Raphael",
+      "frame": {
+       "agent": "Raphael",
+       "verb": "authorize"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "connective",
+      "text": "Additionally"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_20": {
+  "statements": [
+   {
+    "quote": "Confidential Information shall not be reproduced in any form except as required to accomplish the intent of this Agreement",
+    "force": "prohibition",
+    "force_text": "shall not be",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": ""
+    },
+    "acts": [
+     {
+      "verb": "reproduce",
+      "verb_text": "reproduced",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "in any form",
+        "term": "AnyForm"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "RequiredForIntent",
+      "text": "except as required to accomplish the intent of this Agreement",
+      "frame": {
+       "verb": "require",
+       "object": "reproduction"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_24": {
+  "statements": [
+   {
+    "quote": "Upon the Company's request, you shall promptly deliver to the Company or destroy all written Evaluation Materials and any other written materials",
+    "force": "obligation",
+    "force_text": "shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "you"
+    },
+    "acts": [
+     {
+      "verb": "deliver",
+      "verb_text": "deliver",
+      "maps_to": "ReturnOrDestroy",
+      "relation": "same",
+      "object": {
+       "text": "all written Evaluation Materials and any other written materials",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to the Company",
+        "term": "Company"
+       },
+       "time": {
+        "text": "promptly",
+        "term": "Promptly"
+       }
+      }
+     },
+     {
+      "verb": "destroy",
+      "verb_text": "destroy",
+      "maps_to": "ReturnOrDestroy",
+      "relation": "same",
+      "object": {
+       "text": "all written Evaluation Materials and any other written materials",
+       "is_ci": true
+      },
+      "slots": {
+       "time": {
+        "text": "promptly",
+        "term": "Promptly"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "CompanyRequest",
+      "text": "Upon the Company's request",
+      "frame": {
+       "agent": "Company",
+       "verb": "request"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   },
+   {
+    "quote": "without retaining, in whole or in part, any copies, extracts or other reproductions (whatever the form or storage medium) of such materials",
+    "force": "prohibition",
+    "force_text": "without retaining",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "you"
+    },
+    "acts": [
+     {
+      "verb": "retain",
+      "verb_text": "retaining",
+      "maps_to": "RetainCopies",
+      "relation": "same",
+      "object": {
+       "text": "any copies, extracts or other reproductions",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "in whole or in part",
+        "term": "InWholeOrPart"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "CompanyRequest",
+      "text": "Upon the Company's request",
+      "frame": {
+       "agent": "Company",
+       "verb": "request"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "whatever the form or storage medium"
+     },
+     {
+      "slot": "of_what",
+      "text": "of such materials"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "and shall certify the destruction of such materials in writing to the Company",
+    "force": "obligation",
+    "force_text": "shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": ""
+    },
+    "acts": [
+     {
+      "verb": "certify",
+      "verb_text": "certify",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "the destruction of such materials",
+       "is_ci": false
+      },
+      "slots": {
+       "manner": {
+        "text": "in writing",
+        "term": "InWriting"
+       },
+       "recipient": {
+        "text": "to the Company",
+        "term": "Company"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "CompanyRequest",
+      "text": "Upon the Company's request",
+      "frame": {
+       "agent": "Company",
+       "verb": "request"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_25": {
+  "statements": [
+   {
+    "quote": "neither Party will be restricted from using the information contained in the Evaluation Material that is retained in the minds of Representatives who have had access to the other Party's Evaluation Material, unless such use shall infringe on any of such Party's patent rights, trademark rights or copyright rights",
+    "force": "permission",
+    "force_text": "neither ... will be restricted from",
+    "agent": {
+     "role": "BothParties",
+     "name": "Party"
+    },
+    "acts": [
+     {
+      "verb": "use",
+      "verb_text": "using",
+      "maps_to": "UseForOtherPurposes",
+      "relation": "kind_of",
+      "object": {
+       "text": "the information contained in the Evaluation Material that is retained in the minds of Representatives who have had access to the other Party's Evaluation Material",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "InfringesIPRights",
+      "text": "unless such use shall infringe on any of such Party's patent rights, trademark rights or copyright rights",
+      "frame": {
+       "verb": "infringe",
+       "object": "IP rights"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "override",
+      "text": "Notwithstanding any other provision of this Agreement"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_28": {
+  "statements": [
+   {
+    "quote": "The Receiving Party agrees to treat all information provided by the Providing Party in connection with the Business Under Discussion to the Receiving Partner and/or any of its partners, directors, officers, employees, affiliates, insurers, agents, advisors or auditors (the \"Representatives\"), regardless of the manner in which it is so furnished, together with any analyses, compilations, data, studies or other documents or records, whether of an oral, written or electronically retrievable nature (collectively the \"Information\"), as strictly confidential",
+    "force": "obligation",
+    "force_text": "agrees to",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "The Receiving Party"
+    },
+    "acts": [
+     {
+      "verb": "treat",
+      "verb_text": "treat",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "all information provided by the Providing Party in connection with the Business Under Discussion to the Receiving Partner and/or any of its partners, directors, officers, employees, affiliates, insurers, agents, advisors or auditors",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "as strictly confidential",
+        "term": "StrictlyConfidential"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "defined_term",
+      "text": "the \"Representatives\""
+     },
+     {
+      "slot": "scope",
+      "text": "regardless of the manner in which it is so furnished"
+     },
+     {
+      "slot": "also_covers",
+      "text": "together with any analyses, compilations, data, studies or other documents or records"
+     },
+     {
+      "slot": "form",
+      "text": "whether of an oral, written or electronically retrievable nature"
+     },
+     {
+      "slot": "defined_term2",
+      "text": "collectively the \"Information\""
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "together with any analyses, compilations, data, studies or other documents or records, whether of an oral, written or electronically retrievable nature (collectively the \"Information\")",
+    "force": "includes",
+    "force_text": "together with",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "Information"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "any analyses, compilations, data, studies or other documents or records",
+      "term": "AnalysesDataRecords",
+      "classes": []
+     },
+     {
+      "text": "oral",
+      "term": "Oral",
+      "classes": [
+       "oral_visual"
+      ]
+     },
+     {
+      "text": "written",
+      "term": "Written",
+      "classes": []
+     },
+     {
+      "text": "electronically retrievable",
+      "term": "Electronic",
+      "classes": []
+     }
+    ],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "form",
+      "text": "whether of an oral, written or electronically retrievable nature"
+     },
+     {
+      "slot": "defined_term",
+      "text": "collectively the \"Information\""
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_30": {
+  "statements": [
+   {
+    "quote": "Neither VENDOR nor any of its employees, agents, contractors, or subcontractors shall sell, release, transfer, reprint, duplicate, recreate, disclose or permit the disclosure to any other person or entity of any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information without the express written consent of UNIVERSITY and in full compliance with applicable state and federal privacy laws",
+    "force": "prohibition",
+    "force_text": "Neither ... shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "VENDOR nor any of its employees, agents, contractors, or subcontractors"
+    },
+    "acts": [
+     {
+      "verb": "sell",
+      "verb_text": "sell",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any other person or entity",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "release",
+      "verb_text": "release",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any other person or entity",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "transfer",
+      "verb_text": "transfer",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any other person or entity",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "reprint",
+      "verb_text": "reprint",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "duplicate",
+      "verb_text": "duplicate",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "recreate",
+      "verb_text": "recreate",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {}
+     },
+     {
+      "verb": "disclose",
+      "verb_text": "disclose",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any other person or entity",
+        "term": "ThirdParty"
+       }
+      }
+     },
+     {
+      "verb": "permit_disclosure",
+      "verb_text": "permit the disclosure",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "any of the Confidential Information or of any files, compilation, study, report, or analysis or data base containing, based on, or derived from the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any other person or entity",
+        "term": "ThirdParty"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "text": "without the express written consent of UNIVERSITY and in full compliance with applicable state and federal privacy laws",
+      "all": [
+       {
+        "atom": "UniversityExpressWrittenConsent",
+        "text": "the express written consent of UNIVERSITY",
+        "frame": {
+         "agent": "UNIVERSITY",
+         "verb": "consent"
+        }
+       },
+       {
+        "atom": "FullComplianceWithPrivacyLaws",
+        "text": "in full compliance with applicable state and federal privacy laws",
+        "frame": {
+         "verb": "comply"
+        }
+       }
+      ]
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_33": {
+  "statements": [
+   {
+    "quote": "\"Information\" means all oral, written, or other information whatsoever, including information in documents and other recording media and information embodied in any item, which in connection with the Matter, is",
+    "force": "includes",
+    "force_text": "means",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "Information"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "oral",
+      "term": "Oral",
+      "classes": [
+       "oral_visual"
+      ]
+     },
+     {
+      "text": "written",
+      "term": "Written",
+      "classes": []
+     },
+     {
+      "text": "other information whatsoever",
+      "term": "OtherInformation",
+      "classes": [
+       "technical",
+       "non_technical",
+       "oral_visual"
+      ]
+     },
+     {
+      "text": "information in documents and other recording media",
+      "term": "InfoInDocuments",
+      "classes": []
+     },
+     {
+      "text": "information embodied in any item",
+      "term": "InfoEmbodied",
+      "classes": []
+     }
+    ],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": true,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "which in connection with the Matter, is"
+     },
+     {
+      "slot": "illustration",
+      "text": "including"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_36": {
+  "statements": [
+   {
+    "quote": "Confidential Information shall mean: i) all technical, financial and business information disclosed by one Party to the other Party or by another Haldex Group entity to the Supplier including, but not limited to, documents, data, information, prototypes or components relating to devices, methods, materials, apparatus, designs, research, yields and specifications",
+    "force": "includes",
+    "force_text": "shall mean",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "Confidential Information"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "technical",
+      "term": "Technical",
+      "classes": [
+       "technical"
+      ]
+     },
+     {
+      "text": "financial",
+      "term": "Financial",
+      "classes": [
+       "non_technical"
+      ]
+     },
+     {
+      "text": "business information",
+      "term": "Business",
+      "classes": [
+       "non_technical"
+      ]
+     },
+     {
+      "text": "documents, data, information, prototypes or components relating to devices, methods, materials, apparatus, designs, research, yields and specifications",
+      "term": "ListedMaterials",
+      "classes": [
+       "technical"
+      ]
+     }
+    ],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": true,
+    "details": [
+     {
+      "slot": "disclosure",
+      "text": "disclosed by one Party to the other Party or by another Haldex Group entity to the Supplier"
+     },
+     {
+      "slot": "illustration",
+      "text": "including, but not limited to"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_37": {
+  "statements": [
+   {
+    "quote": "The definition of Information shall not include information that: (d) is or has been lawfully disclosed by a third Party to the Receiving Party without an obligation of confidentiality",
+    "force": "excludes",
+    "force_text": "shall not include",
+    "agent": {
+     "role": "ConfidentialInfo",
+     "name": "Information"
+    },
+    "acts": [],
+    "items": [
+     {
+      "text": "information that: (d) is or has been lawfully disclosed by a third Party to the Receiving Party without an obligation of confidentiality",
+      "term": "LawfullyDisclosedByThirdParty",
+      "classes": []
+     }
+    ],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "The definition of"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "The definition of Information shall not include information that: (d) is or has been lawfully disclosed by a third Party to the Receiving Party without an obligation of confidentiality",
+    "force": "permission",
+    "force_text": "shall not include",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "the Receiving Party"
+    },
+    "acts": [
+     {
+      "verb": "receive",
+      "verb_text": "disclosed",
+      "maps_to": "AcquireFromThirdParty",
+      "relation": "same",
+      "object": {
+       "text": "information",
+       "is_ci": true
+      },
+      "slots": {
+       "source": {
+        "text": "by a third Party",
+        "term": "ThirdParty"
+       },
+       "recipient": {
+        "text": "to the Receiving Party",
+        "term": "ReceivingParty"
+       },
+       "manner": {
+        "text": "lawfully",
+        "term": "Lawfully"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "condition_of_receipt",
+      "text": "without an obligation of confidentiality"
+     },
+     {
+      "slot": "scope",
+      "text": "The definition of"
+     },
+     {
+      "slot": "tense",
+      "text": "is or has been"
+     }
+    ],
+    "inferred": true
+   }
+  ]
+ },
+ "ret_38": {
+  "statements": [
+   {
+    "quote": "Each of PictureTel and Polycom shall (ii) not disclose the Confidential Information to any third party, except for disclosures to its directors, executive officers and representatives of its advisors (such as independent accountants, investment bankers, consultants and attorneys) acting on its behalf (collectively, its \"Representatives\") who in each case, in such party's reasonable judgment, need to know such information for the purpose of evaluating a possible Transaction and who are set forth on Annex A hereto, as it may be amended by the parties from time to time",
+    "force": "prohibition",
+    "force_text": "shall not",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Each of PictureTel and Polycom"
+    },
+    "acts": [
+     {
+      "verb": "disclose",
+      "verb_text": "disclose",
+      "maps_to": "ShareWithThirdParties",
+      "relation": "same",
+      "object": {
+       "text": "the Confidential Information",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to any third party",
+        "term": "ThirdParty"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "text": "except for disclosures to its directors, executive officers and representatives of its advisors (such as independent accountants, investment bankers, consultants and attorneys) acting on its behalf (collectively, its \"Representatives\") who in each case, in such party's reasonable judgment, need to know such information for the purpose of evaluating a possible Transaction and who are set forth on Annex A hereto, as it may be amended by the parties from time to time",
+      "all": [
+       {
+        "atom": "RecipientIsRepresentative",
+        "text": "directors, executive officers and representatives of its advisors (such as independent accountants, investment bankers, consultants and attorneys) acting on its behalf",
+        "frame": {
+         "object": "Representatives"
+        }
+       },
+       {
+        "atom": "NeedToKnowForTransaction",
+        "text": "in each case, in such party's reasonable judgment, need to know such information for the purpose of evaluating a possible Transaction",
+        "frame": {
+         "verb": "need_to_know"
+        }
+       },
+       {
+        "atom": "ListedInAnnexA",
+        "text": "who are set forth on Annex A hereto, as it may be amended by the parties from time to time",
+        "frame": {
+         "verb": "list"
+        }
+       }
+      ]
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_41": {
+  "statements": [
+   {
+    "quote": "Immediately upon the written request by the Disclosing Party at any time, the Receiving Party will return to the Disclosing Party all Proprietary Information and all documents or media containing any such Proprietary Information and any and all copies or extracts thereof",
+    "force": "obligation",
+    "force_text": "will",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "the Receiving Party"
+    },
+    "acts": [
+     {
+      "verb": "return",
+      "verb_text": "return",
+      "maps_to": "ReturnOrDestroy",
+      "relation": "same",
+      "object": {
+       "text": "all Proprietary Information and all documents or media containing any such Proprietary Information and any and all copies or extracts thereof",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to the Disclosing Party",
+        "term": "DisclosingParty"
+       },
+       "time": {
+        "text": "Immediately",
+        "term": "Immediately"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "WrittenRequestByDiscloser",
+      "text": "upon the written request by the Disclosing Party at any time",
+      "frame": {
+       "agent": "DisclosingParty",
+       "verb": "request"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   },
+   {
+    "quote": "return to the Disclosing Party all Proprietary Information and all documents or media containing any such Proprietary Information and any and all copies or extracts thereof",
+    "force": "prohibition",
+    "force_text": "return",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "the Receiving Party"
+    },
+    "acts": [
+     {
+      "verb": "retain",
+      "verb_text": "return",
+      "maps_to": "RetainCopies",
+      "relation": "same",
+      "object": {
+       "text": "all Proprietary Information and all documents or media containing any such Proprietary Information and any and all copies or extracts thereof",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "to the Disclosing Party",
+        "term": "DisclosingParty"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "WrittenRequestByDiscloser",
+      "text": "upon the written request by the Disclosing Party at any time",
+      "frame": {
+       "agent": "DisclosingParty",
+       "verb": "request"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": true
+   },
+   {
+    "quote": "save that where such Proprietary Information is a form incapable of return or has been copied or transcribed into another document, it shall be destroyed or erased, as appropriate",
+    "force": "obligation",
+    "force_text": "shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": ""
+    },
+    "acts": [
+     {
+      "verb": "destroy",
+      "verb_text": "destroyed",
+      "maps_to": "ReturnOrDestroy",
+      "relation": "same",
+      "object": {
+       "text": "it",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "as appropriate",
+        "term": "AsAppropriate"
+       }
+      }
+     },
+     {
+      "verb": "erase",
+      "verb_text": "erased",
+      "maps_to": "ReturnOrDestroy",
+      "relation": "same",
+      "object": {
+       "text": "it",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "as appropriate",
+        "term": "AsAppropriate"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "FormIncapableOfReturnOrCopied",
+      "text": "save that where such Proprietary Information is a form incapable of return or has been copied or transcribed into another document",
+      "frame": {
+       "object": "Proprietary Information"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_45": {
+  "statements": [
+   {
+    "quote": "The Recipient's obligations under this Agreement do not apply to, and the term Confidential Information does not include, any information to the extent to which the Recipient can prove to the Disclosers' reasonable satisfaction has been agreed by the Disclosers in writing as being excluded from Confidential Information",
+    "force": "permission",
+    "force_text": "do not apply to",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "The Recipient's"
+    },
+    "acts": [
+     {
+      "verb": "be_free_of_obligations",
+      "verb_text": "obligations under this Agreement",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "any information",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "AgreedExcludedInWriting",
+      "text": "to the extent to which the Recipient can prove to the Disclosers' reasonable satisfaction has been agreed by the Disclosers in writing as being excluded from Confidential Information"
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "also",
+      "text": "and the term Confidential Information does not include"
+     }
+    ],
+    "inferred": true
+   },
+   {
+    "quote": "The Recipient shall not be in breach of its obligations under this Agreement to the extent that any Confidential Information received by it may be required by law or regulation having force of law; or the rules of any court or other body of competent jurisdiction; or any governmental body to be disclosed",
+    "force": "permission",
+    "force_text": "shall not be in breach of",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "The Recipient"
+    },
+    "acts": [
+     {
+      "verb": "disclose",
+      "verb_text": "disclosed",
+      "maps_to": "DiscloseUnderLegalProcess",
+      "relation": "same",
+      "object": {
+       "text": "any Confidential Information received by it",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "text": "to the extent that any Confidential Information received by it may be required by law or regulation having force of law; or the rules of any court or other body of competent jurisdiction; or any governmental body to be disclosed",
+      "any": [
+       {
+        "atom": "RequiredByLaw",
+        "text": "required by law or regulation having force of law",
+        "frame": {
+         "object": "disclosure"
+        }
+       },
+       {
+        "atom": "RequiredByCourtRules",
+        "text": "the rules of any court or other body of competent jurisdiction",
+        "frame": {
+         "object": "disclosure"
+        }
+       },
+       {
+        "atom": "RequiredByGovernmentBody",
+        "text": "any governmental body",
+        "frame": {
+         "object": "disclosure"
+        }
+       }
+      ]
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "its obligations under this Agreement"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "provided in each case the Recipient, to the extent permitted by the foregoing requirement, immediately notifies the Disclosers in writing of any request or requirement for disclosure and of all relevant surrounding circumstances prior to disclosure",
+    "force": "obligation",
+    "force_text": "provided in each case",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "the Recipient"
+    },
+    "acts": [
+     {
+      "verb": "notify",
+      "verb_text": "notifies",
+      "maps_to": "NotifyOnLegalDisclosure",
+      "relation": "same",
+      "object": {
+       "text": "any request or requirement for disclosure and of all relevant surrounding circumstances",
+       "is_ci": true
+      },
+      "slots": {
+       "recipient": {
+        "text": "the Disclosers",
+        "term": "DisclosingParty"
+       },
+       "manner": {
+        "text": "in writing",
+        "term": "InWriting"
+       },
+       "time": {
+        "text": "immediately ... prior to disclosure",
+        "term": "BeforeDisclosure"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "limit",
+      "text": "to the extent permitted by the foregoing requirement"
+     }
+    ],
+    "inferred": true
+   },
+   {
+    "quote": "and takes into account any representations made by the Disclosers in relation to the disclosure",
+    "force": "obligation",
+    "force_text": "takes into account",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "the Recipient"
+    },
+    "acts": [
+     {
+      "verb": "consider",
+      "verb_text": "takes into account",
+      "maps_to": null,
+      "relation": "same",
+      "object": {
+       "text": "any representations made by the Disclosers in relation to the disclosure",
+       "is_ci": false
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_59": {
+  "statements": [
+   {
+    "quote": "Neither Investor nor any of its Representatives shall, directly or indirectly, (y) reproduce or otherwise copy any Evaluation Material except in connection with the Transaction",
+    "force": "prohibition",
+    "force_text": "Neither ... shall",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Investor nor any of its Representatives"
+    },
+    "acts": [
+     {
+      "verb": "reproduce",
+      "verb_text": "reproduce",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "any Evaluation Material",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "directly or indirectly",
+        "term": "DirectOrIndirect"
+       }
+      }
+     },
+     {
+      "verb": "copy",
+      "verb_text": "otherwise copy",
+      "maps_to": "CreateCopy",
+      "relation": "same",
+      "object": {
+       "text": "any Evaluation Material",
+       "is_ci": true
+      },
+      "slots": {
+       "manner": {
+        "text": "directly or indirectly",
+        "term": "DirectOrIndirect"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [],
+    "exceptions": [
+     {
+      "atom": "InConnectionWithTransaction",
+      "text": "except in connection with the Transaction",
+      "frame": {
+       "object": "Evaluation Material"
+      }
+     }
+    ],
+    "exhaustive": false,
+    "details": [],
+    "inferred": false
+   }
+  ]
+ },
+ "ret_5": {
+  "statements": [
+   {
+    "quote": "The obligations in Clause 5.1 shall not apply for Confidential Information that: 5.2.4. is required to be disclosed by law, regulation or any competent governmental, judicial or regulatory authority, or by a recognized stock exchange, or in response to a request from a regulatory body with a supervisory role over Recipient or any of its Affiliates",
+    "force": "permission",
+    "force_text": "shall not apply",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Recipient"
+    },
+    "acts": [
+     {
+      "verb": "disclose",
+      "verb_text": "disclosed",
+      "maps_to": "DiscloseUnderLegalProcess",
+      "relation": "same",
+      "object": {
+       "text": "Confidential Information",
+       "is_ci": true
+      },
+      "slots": {}
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "text": "is required to be disclosed by law, regulation or any competent governmental, judicial or regulatory authority, or by a recognized stock exchange, or in response to a request from a regulatory body with a supervisory role over Recipient or any of its Affiliates",
+      "any": [
+       {
+        "atom": "RequiredByLawOrRegulation",
+        "text": "is required to be disclosed by law, regulation",
+        "frame": {
+         "verb": "require",
+         "object": "disclosure"
+        }
+       },
+       {
+        "atom": "RequiredByAuthority",
+        "text": "any competent governmental, judicial or regulatory authority",
+        "frame": {
+         "verb": "require",
+         "object": "disclosure"
+        }
+       },
+       {
+        "atom": "RequiredByStockExchange",
+        "text": "by a recognized stock exchange",
+        "frame": {
+         "verb": "require",
+         "object": "disclosure"
+        }
+       },
+       {
+        "atom": "RequestFromSupervisoryRegulator",
+        "text": "in response to a request from a regulatory body with a supervisory role over Recipient or any of its Affiliates",
+        "frame": {
+         "verb": "request",
+         "object": "disclosure"
+        }
+       }
+      ]
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "scope",
+      "text": "The obligations in Clause 5.1"
+     }
+    ],
+    "inferred": false
+   },
+   {
+    "quote": "in which case Recipient will (or, if Recipient's Representative is subject to the disclosure obligation, Recipient will procure that such Representative will), in each case to the extent permitted by law, regulation or the relevant authority: a) inform Discloser of the circumstances of the disclosure and the information that will be disclosed as soon as reasonably practicable",
+    "force": "obligation",
+    "force_text": "will",
+    "agent": {
+     "role": "ReceivingParty",
+     "name": "Recipient"
+    },
+    "acts": [
+     {
+      "verb": "inform",
+      "verb_text": "inform",
+      "maps_to": "NotifyOnLegalDisclosure",
+      "relation": "same",
+      "object": {
+       "text": "the circumstances of the disclosure and the information that will be disclosed",
+       "is_ci": false
+      },
+      "slots": {
+       "recipient": {
+        "text": "Discloser",
+        "term": "DisclosingParty"
+       },
+       "time": {
+        "text": "as soon as reasonably practicable",
+        "term": "AsSoonAsReasonablyPracticable"
+       }
+      }
+     }
+    ],
+    "items": [],
+    "conditions": [
+     {
+      "atom": "RequiredToDiscloseUnderLegalProcess",
+      "text": "in which case",
+      "frame": {
+       "verb": "require",
+       "object": "disclosure"
+      }
+     }
+    ],
+    "exceptions": [],
+    "exhaustive": false,
+    "details": [
+     {
+      "slot": "alternative_actor",
+      "text": "or, if Recipient's Representative is subject to the disclosure obligation, Recipient will procure that such Representative will"
+     },
+     {
+      "slot": "limit",
+      "text": "in each case to the extent permitted by law, regulation or the relevant authority"
+     }
+    ],
+    "inferred": false
+   }
+  ]
+ }
+}
